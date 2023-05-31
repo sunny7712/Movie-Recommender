@@ -11,7 +11,7 @@ tmdb.api_key = '9e0b7f57d3b5f874fea0e35a82b5f54e'
 movie = Movie()
 
 # similarity_matrix = pickle.load(open('similarity.pkl', 'rb'))
-df = pd.read_csv('highrated1.csv')
+df = pd.read_csv('/home/sunny/Projects/Movie Recommender/highrated1.csv')
 
 cv = CountVectorizer()
 count_matrix = cv.fit_transform(df['final'])
